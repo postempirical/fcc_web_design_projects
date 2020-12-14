@@ -1,0 +1,38 @@
+body {
+  background-color: linen;
+}
+
+#title {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: larger;
+  text-transform: uppercase;
+  text-decoration: underline 2px;
+  margin: 10px;
+}
+
+#img-div {
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: x-small;
+  font-weight: 400;
+}
+
+#image {
+  align-items: center;
+  max-width: 330px;
+  width: 100%;
+  height: auto;
+  border-radius: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 1px solid;
+}
+
+p {
+  text-align: center;
+  font-weight: 550;
+}
