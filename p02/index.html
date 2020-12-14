@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <div>
+      <p id="description">
+        This is a form surveying the overall satisfaction with the
+        'Smile-Marathon' event held last Sunday in college campus.
+      </p>
+    </div>
+    <div class="container">
+      <form id="survey-form" action="#/">
+        <div class="box">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="your name"
+            required
+          />
+        </div>
+        <div class="box">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="college email id"
+            required
+          />
+        </div>
+        <div class="box">
+          <label for="number" id="number-label">Event Rating</label>
+          <input
+            type="number"
+            id="number"
+            name="number"
+            placeholder="enter number (1-10)"
+            min="1"
+            max="10"
+            required
+          />
+        </div>
+        <div class="box race">
+          <label for="select">What race did you take part in?</label> <br />
+          <select name="select" id="dropdown" name="race" required>
+            <option value="">---Please select your run</option>
+            <option value="fun">Casual Run</option>
+            <option value="fiveK">5k</option>
+            <option value="tenK">10k</option>
+            <option value="half">Half Marathon</option>
+            <option value="full">Full Marathon</option>
+          </select>
+        </div>
+        <div class="box radio">
+          <p>Select gender:</p>
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male">Male</label box>
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other" value="other" />
+          <label for="other">Other</label>
+        </div>
+        <div class="box">
+            <p>What refreshers did you like?</p>
+            <div class="cb"><input type="checkbox" id="drink" name="drink" value="selected" />
+            <label for="a">Energy Drinks</label><br></div>
+            <div class="cb"><input type="checkbox" id="bar" name="bar" value="selected" />
+            <label for="b">Protein Bars</label> <br></div>
+            <div class="cb"><input type="checkbox" id="pizza" name="pizza" value="selected" />
+            <label for="c">Pizza Slices</label></div>
+        </div>
+
+        <div class="area">
+          <label for="comments">Any suggestions? Please share!</label> <br />
+          <textarea
+            id="comments"
+            name="comments"
+            rows="5"
+            cols="50"
+            placeholder="..."
+          ></textarea>
+        </div>
+        <button id="submit">Submit!</button>
+      </form>
+    </div>
+  </body>
+</html>
