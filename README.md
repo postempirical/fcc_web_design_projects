@@ -1,1 +1,1 @@
-# fcc_web-design-projects
+# fcc_web_design_projects
